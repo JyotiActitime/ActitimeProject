@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[database connected]]>
+    </line>
+    <line>
+      <![CDATA[launch Browser]]>
+    </line>
+    <line>
+      <![CDATA[test started]]>
+    </line>
+    <line>
+      <![CDATA[database disconnected]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-12-05T18:54:10 IST" name="Default suite" finished-at="2022-12-05T18:55:04 IST" duration-ms="53966">
+    <groups>
+    </groups>
+    <test started-at="2022-12-05T18:54:10 IST" name="Default test" finished-at="2022-12-05T18:55:04 IST" duration-ms="53966">
+      <class name="com.actitime.testScript.CreateCustomer">
+        <test-method is-config="true" signature="databaseconnection()[pri:0, instance:com.actitime.testScript.CreateCustomer@6a192cfe]" started-at="2022-12-05T18:54:10 IST" name="databaseconnection" finished-at="2022-12-05T18:54:10 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[database connected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- databaseconnection -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.actitime.testScript.CreateCustomer@6a192cfe]" started-at="2022-12-05T18:54:10 IST" name="launchBrowser" finished-at="2022-12-05T18:54:34 IST" duration-ms="23240" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[launch Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.actitime.testScript.CreateCustomer@6a192cfe]" started-at="2022-12-05T18:54:34 IST" name="login" finished-at="2022-12-05T18:54:38 IST" duration-ms="3893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createcustomer()[pri:0, instance:com.actitime.testScript.CreateCustomer@6a192cfe]" started-at="2022-12-05T18:54:38 IST" name="createcustomer" finished-at="2022-12-05T18:55:03 IST" duration-ms="25352" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/logout.do" id="logoutLink" class="logout">...</a> is not clickable at point (1223, 7). Other element would receive the click: <div class="loadingMoire" style="display: flex;">...</div>
+  (Session info: chrome=107.0.5304.123)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-NOL47SNM', ip: '192.168.43.95', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a7de2cc31beed9db5a9d559b0e448246, clickElement {id=216d078d-6d6a-4ded-867a-43e4acdff27c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.123, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\91724\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52384/devtoo..., se:cdpVersion: 107.0.5304.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a7de2cc31beed9db5a9d559b0e448246)] -> id: logoutLink]
+Session ID: a7de2cc31beed9db5a9d559b0e448246]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/logout.do" id="logoutLink" class="logout">...</a> is not clickable at point (1223, 7). Other element would receive the click: <div class="loadingMoire" style="display: flex;">...</div>
+  (Session info: chrome=107.0.5304.123)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-NOL47SNM', ip: '192.168.43.95', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a7de2cc31beed9db5a9d559b0e448246, clickElement {id=216d078d-6d6a-4ded-867a-43e4acdff27c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.123, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\91724\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52384/devtoo..., se:cdpVersion: 107.0.5304.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a7de2cc31beed9db5a9d559b0e448246)] -> id: logoutLink]
+Session ID: a7de2cc31beed9db5a9d559b0e448246
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+at com.actitime.objectrepository.HomePage.logout(HomePage.java:47)
+at com.actitime.testScript.CreateCustomer.createcustomer(CreateCustomer.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[test started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createcustomer -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.actitime.testScript.CreateCustomer@6a192cfe]" started-at="2022-12-05T18:55:03 IST" name="logout" finished-at="2022-12-05T18:55:04 IST" duration-ms="1157" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/logout.do" id="logoutLink" class="logout">...</a> is not clickable at point (1223, 7). Other element would receive the click: <div class="loadingMoire anim-fade-out" style="display: flex;">...</div>
+  (Session info: chrome=107.0.5304.123)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-NOL47SNM', ip: '192.168.43.95', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a7de2cc31beed9db5a9d559b0e448246, clickElement {id=216d078d-6d6a-4ded-867a-43e4acdff27c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.123, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\91724\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52384/devtoo..., se:cdpVersion: 107.0.5304.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a7de2cc31beed9db5a9d559b0e448246)] -> id: logoutLink]
+Session ID: a7de2cc31beed9db5a9d559b0e448246]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/logout.do" id="logoutLink" class="logout">...</a> is not clickable at point (1223, 7). Other element would receive the click: <div class="loadingMoire anim-fade-out" style="display: flex;">...</div>
+  (Session info: chrome=107.0.5304.123)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-NOL47SNM', ip: '192.168.43.95', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a7de2cc31beed9db5a9d559b0e448246, clickElement {id=216d078d-6d6a-4ded-867a-43e4acdff27c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.123, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\91724\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52384}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52384/devtoo..., se:cdpVersion: 107.0.5304.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a7de2cc31beed9db5a9d559b0e448246)] -> id: logoutLink]
+Session ID: a7de2cc31beed9db5a9d559b0e448246
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+at com.actitime.objectrepository.HomePage.logout(HomePage.java:47)
+at com.actitime.genericlibrary.BaseClass.logout(BaseClass.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.actitime.testScript.CreateCustomer@6a192cfe]" started-at="2022-12-05T18:55:04 IST" name="closebrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1670246704942" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="databasedisconnected()[pri:0, instance:com.actitime.testScript.CreateCustomer@6a192cfe]" started-at="2022-12-05T18:55:05 IST" name="databasedisconnected" finished-at="2022-12-05T18:55:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[database disconnected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- databasedisconnected -->
+      </class> <!-- com.actitime.testScript.CreateCustomer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
